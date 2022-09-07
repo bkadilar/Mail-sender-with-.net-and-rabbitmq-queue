@@ -35,7 +35,7 @@ namespace Mail
 
         private void InitRabbitMQ()
         {
-            var factory = new ConnectionFactory { HostName = "93.113.61.221", UserName = "myuser", Password = "123QWEasd**" };
+            var factory = new ConnectionFactory { HostName = "HOSTNAME", UserName = "USERNAME", Password = "PASSWORD" };
             Global.DBQueueName = "mail_create";
             // create connection  
             _connection = factory.CreateConnection();
